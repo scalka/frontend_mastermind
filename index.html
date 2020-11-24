@@ -2,10 +2,48 @@
 	<html>
 	<head>
 		<title>Frontend test</title>
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-	<h1>Hello world!
-	</h1>
-	
+
+		<button class="menu" onclick="openPage('Home', this, '#85C1E9')">Home</button>
+		<button class="menu" onclick="openPage('News', this, '#76D7C4')" id="defaultOpen">News</button>
+		<button class="menu" onclick="openPage('Contact', this, '#C39BD3')">Contact</button>
+		<button class="menu" onclick="openPage('About', this, '#F8C471')">About</button>
+
+		<div id="Home" class="contentmenu">
+		<p>Home page</p>
+		</div>
+
+		<div id="News" class="contentmenu">
+		<p>News page</p>
+		</div>
+
+		<div id="Contact" class="contentmenu">
+		<p>Contact page</p>
+		</div>
+
+		<div id="About" class="contentmenu">
+		<p>About us</p>
+		</div>
+
+		<script>
+			function openPage(pageName,elmnt,color) {
+			  var i, contentmenu, menus;
+			  contentmenu = document.getElementsByClassName("contentmenu");
+			  for (i = 0; i < contentmenu.length; i++) {
+				contentmenu[i].style.display = "none";
+			  }
+			  menus = document.getElementsByClassName("menu");
+			  for (i = 0; i < menus.length; i++) {
+				menus[i].style.backgroundColor = "";
+			  }
+			  document.getElementById(pageName).style.display = "block";
+			  elmnt.style.backgroundColor = color;
+			}
+			
+			document.getElementById("defaultOpen").click();
+			</script>
+
 	</body>
 	</html>

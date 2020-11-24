@@ -1,0 +1,36 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+  }
+
+  .menu {
+    background-color: #566573;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+    color: #1C2833;
+  }
+  
+
+  .menu:hover {
+    background-color: #777;
+  }
+  
+
+  .contentmenu {
+    color: #1C2833;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+  
+  #Home {background-color: #85C1E9;}
+  #News {background-color: #76D7C4  ;}
+  #Contact {background-color: #C39BD3;}
+  #About {background-color: #F8C471;}
