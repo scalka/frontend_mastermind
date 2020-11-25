@@ -1,49 +1,39 @@
 <!DOCTYPE html>
-	<html>
-	<head>
-		<title>Frontend test</title>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+<style>
+  body {
+    font-family: "Montserrat";
+  }
+  
+</style>
 
-		<button class="menu" onclick="openPage('Home', this, '#85C1E9')">Home</button>
-		<button class="menu" onclick="openPage('News', this, '#76D7C4')" id="defaultOpen">News</button>
-		<button class="menu" onclick="openPage('Contact', this, '#C39BD3')">Contact</button>
-		<button class="menu" onclick="openPage('About', this, '#F8C471')">About</button>
+</head>
+<body>
 
-		<div id="Home" class="contentmenu">
-		<p>Home page</p>
-		</div>
+<nav id=myDIV class="topnav">
+  <a class="btn active" href="#home"><i class="fas fa-home"></i> Home</a>
+  <a class="btn" href="#news"><i class="fas fa-globe"></i> News</a>
+  <a class="btn" href="#contact"><i class="fas fa-envelope-open-text"></i> Contact</a>
+  <a class="btn" href="#about"><i class="fas fa-users"></i> About</a>
+</nav>
 
-		<div id="News" class="contentmenu">
-		<p>News page</p>
-		</div>
 
-		<div id="Contact" class="contentmenu">
-		<p>Contact page</p>
-		</div>
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
 
-		<div id="About" class="contentmenu">
-		<p>About us</p>
-		</div>
-
-		<script>
-			function openPage(pageName,elmnt,color) {
-			  var i, contentmenu, menus;
-			  contentmenu = document.getElementsByClassName("contentmenu");
-			  for (i = 0; i < contentmenu.length; i++) {
-				contentmenu[i].style.display = "none";
-			  }
-			  menus = document.getElementsByClassName("menu");
-			  for (i = 0; i < menus.length; i++) {
-				menus[i].style.backgroundColor = "";
-			  }
-			  document.getElementById(pageName).style.display = "block";
-			  elmnt.style.backgroundColor = color;
-			}
-			
-			document.getElementById("defaultOpen").click();
-			</script>
-
-	</body>
-	</html>
+</body>
+</html>
