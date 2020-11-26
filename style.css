@@ -7,6 +7,10 @@ body {
   overflow: hidden;
   background-color: #34495E;
 }
+.btn {
+  overflow: hidden;
+  background-color: #e61c66;
+}
 
 .topnav a {
   float: left;
