@@ -3,6 +3,9 @@ body {
 }
 
 .topnav {
+  display: flex;
+  justify-content: center;
+
   overflow: hidden;
   background-color: #34495E;
 }
@@ -12,7 +15,6 @@ body {
 }
 
 .topnav a {
-  float: left;
   color: #ffF;
   text-align: center;
   padding: 14px 16px;
