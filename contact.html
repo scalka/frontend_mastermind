@@ -12,12 +12,20 @@
 </style>
 </head>
 <body>
-<nav class="topnav">
-  <a href="index.html"><i class="fas fa-home"></i> Home</a>
-  <a href="news.html"><i class="fas fa-globe"></i> News</a>
-  <a class="btn" href="contact.html"><i class="fas fa-envelope-open-text"></i> Contact</a>
-  <a href="about.html"><i class="fas fa-users"></i> About</a>
-</nav>
+  <nav>
+    <ul class="topnav">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li class="submenu-item"><a tabindex="0" href="news.html"><i class="fas fa-globe"></i> News <i class="fas fa-angle-down"></i> </a>
+      <ul class="submenu">
+        <li><a href="today.html"><i class="fas fa-calendar-day"></i> Today </a></li>
+        <li><a href="month.html"><i class="fas fa-calendar-alt"></i> Last month</a></li>
+        <li><a href="year.html"><i class="fas fa-trophy"></i> Top news in this year</a></li>
+      </ul>
+      </li>
+      <li class="btn"><a href="contact.html"><i class="fas fa-envelope-open-text"></i> Contact</a></li>
+      <li><a href="about.html"><i class="fas fa-users"></i> About</a></li>
+  </ul> 
+  </nav>
 <h1>Contach us!</h1>
 </body>
 </html>

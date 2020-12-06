@@ -1,14 +1,31 @@
-body {
+*
+{
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
+
 
 .topnav {
   display: flex;
-  justify-content: center;
-
   overflow: hidden;
   background-color: #34495E;
+  flex-wrap: wrap;
+  align-items: center ;
+  justify-content: center;
+
 }
+
+.topnav li a {
+  display: block;
+  padding: 15px 15px;
+  position:relative;
+}
+
+.topnav li.submenu a {
+  padding: 15px 15px;
+}
+
 .btn {
   overflow: hidden;
   background-color: #e61c66;
@@ -29,11 +46,29 @@ body {
 .topnav a.active {
   background-color: #e61c66;
   color: white;
+  display: block;
   
 }
 
-/* Style the active class, and buttons on mouse-over */
 .active, .btn:hover {
   background-color: #666;
   color: white;
 }
+
+li {
+  display: inline;
+}
+
+
+.submenu{
+  display: none;
+  background-color: #34495E;
+  position: absolute;
+
+}
+
+.submenu-item:hover .submenu{
+  display: block;
+  justify-content: left;
+}
+
