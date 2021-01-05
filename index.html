@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 <style>
   body {
     font-family: "Montserrat";
+    background-color: #353535;
   }
   
 </style>
 </head>
 <body>
   <nav>
-    <ul class="topnav">
-      <li class="btn"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-      <li class="submenu-item"><a tabindex="0" href="news.html"><i class="fas fa-globe"></i> News <i class="fas fa-angle-down"></i> </a>
-      <ul class="submenu">
-        <li><a href="today.html"><i class="fas fa-calendar-day"></i> Today </a></li>
-        <li><a href="month.html"><i class="fas fa-calendar-alt"></i> Last month</a></li>
-        <li><a href="year.html"><i class="fas fa-trophy"></i> Top news in this year</a></li>
-      </ul>
+    <ul class="menu">
+      <li class="logo">Paula Schabińska</li>
+      <li class="item"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li class="sub-item"><a chref="news.html"><i class="fas fa-globe"></i> News <i class="fas   fa-angle-down"></i> </a>
+        <ul class="submenu">
+          <li class="item"><a href="today.html"> Today</a></li>
+          <li class="item"><a href="month.html"> Last month</a></li>
+          <li class="item"><a href="year.html"> Top news in this year</a></li>
+        </ul>
       </li>
-      <li><a href="contact.html"><i class="fas fa-envelope-open-text"></i> Contact</a></li>
-      <li><a href="about.html"><i class="fas fa-users"></i> About</a></li>
+      <li class="item"><a href="contact.html"><i class="fas fa-envelope-open-text"></i> Contact</a></li>
+      <li class="item"><a href="about.html"><i class="fas fa-users"></i> About</a></li>
+      <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
   </ul> 
   </nav>
-<h1>Our home webpage</h1>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
 
