@@ -14,3 +14,30 @@ function toggleMenu() {
 
 toggle.addEventListener("click", toggleMenu, false);
 
+/* Submenu activator */
+const submenu = document.querySelector(".has-submenu");
+
+function subMenu() {
+  if (submenu.classList.contains("sub-active")) {
+    submenu.classList.remove("sub-active");
+  }
+    else{
+    submenu.classList.add("sub-active");
+  }
+}
+
+submenu.addEventListener("click", subMenu, false);
+
+/* search activator */
+const search = document.querySelector(".search");
+
+function Look() {
+  if (search.classList.contains("search-active")) {
+    search.classList.remove("search-active");
+  }
+    else{
+      search.classList.add("search-active");
+  }
+}
+
+search.addEventListener("click", Look, false);
