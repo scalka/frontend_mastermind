@@ -2,7 +2,9 @@ body {
 	margin-top: 0px;
     margin-left: 0px;
 	font-family: 'Open Sans', sans-serif;
-		background-color: rgba(252, 239, 121, 0.829);
+	font-size: 25px;
+	font-weight: bold;
+	background-color: rgba(252, 239, 121, 0.829);
 	
 }
 
@@ -15,6 +17,11 @@ ul {
 	width: 100%;
 	background-color: #f8b73d;
 	overflow: auto; /* Enable scrolling if the sidenav has too much content */
+  }
+
+  p {
+	font-size: 15px;
+	font-weight: normal;
   }
  
 
@@ -34,4 +41,17 @@ ul {
 
   li {
 	display: inline;
+  }
+  
+  .chusty_home
+  {
+	font-size: 20px;
+	text-align: center;
+  }
+
+  .chusty_paragraf
+  {
+	font-size: 15px;
+	font-weight: normal;
+	text-align: center;
   }
