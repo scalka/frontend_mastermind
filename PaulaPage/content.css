@@ -1,3 +1,4 @@
+
 .row{
     padding: 20px;
 }
@@ -27,18 +28,22 @@
 .content{
     background-color: #424242;
     padding: 20px;
+    height: 600px;
 }
 
 h1{
     font-size: 20px;
     padding: 5px;
     letter-spacing: 3px;
+    height: 70px;
 }
 h2{
     font-size: 15px;
     padding: 5px;
     font-weight: lighter;
     font-style: italic;
+    margin: 5px;
+    line-height: 30px;
     }
 
 h3{
@@ -56,29 +61,35 @@ h3{
 
 /* Rate */
 
+.rate {
+    display:flex;
+    flex-direction:row-reverse;
+    font-size: 15px;
+    letter-spacing: 3px;  
+    margin: -40px 90px;
+}
+
 .rate:checked {
-    display: inline-block;
     padding: 0 10px;
 }
 
-.rate *{
-      float: right;
-    font-size: 15px;
-    letter-spacing: 3px;  
-}
 
 .rate > input{
-    display: none;
-    
+    display: none;    
 } 
 
+.rate > input ~ label {
+    position:static;
+    color:#fff;
+}
+
 .rate > input:checked ~ label {
-    color: #eb0165;  
+    color: #eb0165; 
+
 }
 
 .rate > input:hover ~ label {
-    color: #eb0165; 
-        
+    color: #eb0165;      
 }
 
 
@@ -91,11 +102,20 @@ h3{
     {
         width: 50%;
     }
+
+    .content{
+         height: 700px;
+    }
+    
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 700px){
     .column
     {
         width: 100%;
     }
+    .content{
+        height: 1000px;
+   }
+
 }   
